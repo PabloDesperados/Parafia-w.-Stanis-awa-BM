@@ -1,0 +1,253 @@
+Reset i bazowe ustawienia
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #e8e3d9; /* jasny beż */
+    color: #1e1e1e;
+    line-height: 1.6;
+  }
+  
+/* Nagłówek */
+header {
+    background-color: transparent;
+    color: #1e1e1e;
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* żeby na mniejszych ekranach tekst się łamał pod spodem */
+  }
+  
+  header .header-left h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #1e1e1e;
+  }
+  
+  header .header-right p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsywność */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .header-right {
+      margin-top: 0.8rem;
+    }
+  }
+  
+  /* Nawigacja */
+  nav {
+    background-color: #1c1917; /* ciemny brąz */
+    text-transform: uppercase;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0.9rem 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 14px;
+    display: inline-block;
+    transition: color .15s, transform .08s;
+    font-size: 0.95rem;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    text-decoration: underline;
+    color: #fff;
+    border-bottom: 4px solid #f6efe6;
+    padding-bottom: 6px;
+  }
+  
+  /* Główna zawartość */
+  main {
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0,0,0,0.12);
+    border-radius: 0 0 4px 4px;
+    padding: 2rem;
+  }
+  
+  /* Stopka */
+  footer {
+    background-color: #1c1917;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+
+/* Baner ze zdjęciem */
+#banner {
+  width: 100%;
+  height: 360px; /* wysokość jak na stronie parafii */
+  overflow: hidden;
+  background-color: #e7e0d4; /* tło takie jak na stronie */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* zamiast cover, pokazuje całe zdjęcie */
+  object-position: center;
+  display: block;
+}
+  
+  .mass-banner {
+    background-color: #f5f2ee;
+    color: #4a2d1a;
+    border: 2px solid #6a3f23;
+    border-radius: 8px;
+    text-align: center;
+    margin: 14px auto;
+    padding: 12px 14px;
+    max-width: 680px;
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Strona główna */
+.home { text-align: center; padding: 10px 8px; }
+
+.home h2 {
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.home-image { display:flex; justify-content:center; margin: 18px 0; }
+.home-image img {
+  max-width: 85%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* Czytaj więcej */
+.read-more-link {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 18px;
+  background-color: #2e5b2e;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.read-more-link:hover { background-color: #3b6f3b; }
+
+/* Msze */
+.msze { text-align:center; padding: 8px; }
+.msze h2 { font-size: 1.8rem; margin-bottom: 12px; }
+
+/* O parafii, ogłoszenia, kontakt */
+.o-parafii, .ogloszenia, .kontakt {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* Formularze */
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: 8px; margin-top:6px; margin-bottom:12px;
+  border-radius:6px; border:1px solid #d0cfc9;
+}
+
+/* Galeria (prosty slider) */
+.gallery .slider-container { max-width: 700px; margin: 20px auto; position: relative; }
+.slider img { width:100%; height:400px; object-fit:cover; border-radius:8px; }
+
+/* Responsywność */
+@media (max-width: 900px) {
+  header { padding: 1.6rem 6%; }
+  .header-left h1 { font-size: 2rem; }
+  #banner { height: 300px; }
+  main { margin-top: -30px; padding: 1.6rem; }
+}
+
+@media (max-width: 600px) {
+  header { padding: 1rem 5%; flex-direction: column; align-items:flex-start; gap: 8px; }
+  .header-left h1 { font-size: 1.6rem; line-height:1.05; }
+  .header-right p { text-align: left; font-size: .95rem; }
+  nav ul { flex-direction: column; gap: 8px; padding: 0.6rem; }
+  nav ul li a { padding: 10px 12px; font-size: 0.95rem; }
+  #banner { height: 220px; }
+  .slider img { height: 260px; }
+  main { margin-top: -20px; padding: 1rem; border-radius: 0; }
+}
+  /* .home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+  }
+  
+  .home-image {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .home-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .home-intro p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+  } */
+  
+  .next-mass {
+    background-color: #f6f6f6;
+    border-top: 2px solid #304d30;
+    border-bottom: 2px solid #304d30;
+    padding: 12px;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
