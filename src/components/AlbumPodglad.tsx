@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { TypAlbumu } from "../ts/DaneGalerii";
 
@@ -8,6 +8,7 @@ interface AlbumPodgladProps {
 
 export function AlbumPodglad({ album }: AlbumPodgladProps) {
   // Wybieramy tylko pierwsze 5 zdjęć do podglądu
+  const [powiekszone, setPowiekszone] = useState<string | null>(null);
   const miniaturaLiczba = Math.min(album.liczbaZdjec, 5);
   const miniatury = Array.from(
     { length: miniaturaLiczba },
@@ -22,7 +23,7 @@ export function AlbumPodglad({ album }: AlbumPodgladProps) {
         {/* Siatka z 5 małymi zdjęciami */}
         <div className="album-podglad-grid">
           {miniatury.map((url, idx) => (
-            <div key={idx} className="album-podglad-item">
+            <div key={idx} className="album-podglad-item" style={{ cursor: "pointer" }} onClick={() => setPowiekszone(url)}>
               <img src={url} alt={`${album.tytul} podgląd ${idx + 1}`} loading="lazy" />
             </div>
           ))}
@@ -35,6 +36,13 @@ export function AlbumPodglad({ album }: AlbumPodgladProps) {
           </Link>
         </div>
       </div>
+
+      {powiekszone && (
+        <div className="gallery-lightbox" onClick={() => setPowiekszone(null)}>
+          <div className="lightbox-close">&times;</div>
+          <img src={powiekszone} alt="Powiększone" />
+        </div>
+      )}
     </div>
   );
 }
