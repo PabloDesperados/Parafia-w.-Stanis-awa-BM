@@ -25,6 +25,7 @@ export default function Header() {
           <li><Link className={isActive("/ogloszenia")} to="/ogloszenia">Ogłoszenia</Link></li>
           <li><Link className={isActive("/msze")} to="/msze">Msze Święte</Link></li>
           <li><Link className={isActive("/o-parafii")} to="/o-parafii">O parafii</Link></li>
+          <li><Link className={isActive("/z-zycia-parafii")} to="/z-zycia-parafii">Z Życia Parafii</Link></li>
           <li><Link className={isActive("/kontakt")} to="/kontakt">Kontakt</Link></li>
         </ul>
       </nav>

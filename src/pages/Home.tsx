@@ -1,5 +1,6 @@
 import React from "react";
 import { MassSchedule } from "../components/MassBanner";
+import { Link } from "react-router-dom";
 
 export const Home: React.FC = () => {
   return (
@@ -24,9 +25,17 @@ export const Home: React.FC = () => {
       </article>
 
       <div style={{ textAlign: "center", marginTop: "20px" }}>
-        <a href="/o-parafii" className="read-more-link">
+        <Link to="/o-parafii" className="read-more-link">
           Czytaj więcej &raquo;
-        </a>
+        </Link>
+      </div>
+
+      <div className="home-gallery-lead" style={{ textAlign: "center", marginTop: "40px", padding: "20px", background: "#f9f9f9", borderRadius: "8px" }}>
+        <h3>Wspomnienia i Kronika Wspólnoty</h3>
+        <p>Zachęcamy do obejrzenia galerii zdjęć z najważniejszych wydarzeń z życia naszej parafii</p>
+        <Link to="/z-zycia-parafii" className="read-more-link">
+          Przejdź do galerii zdjęć &raquo;
+        </Link>
       </div>
     </section>
   );
