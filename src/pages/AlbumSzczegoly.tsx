@@ -20,7 +20,7 @@ export function AlbumSzczegoly() {
   // Generujemy ścieżki do WSZYSTKICH zdjęć w albumie
   const wszystkieZdjecia = Array.from(
     { length: album.liczbaZdjec },
-    (_, i) => `${process.env.PUBLIC_URL}/images/galeria/${album.id}/${i + 1}.jpeg`
+    (_, i) => `../../images/galeria/${album.id}/${i + 1}.jpeg`
   );
 
   return (
