@@ -2,7 +2,7 @@ import React from "react";
 import { MassSchedule } from "../components/MassBanner";
 import { Link } from "react-router-dom";
 
-export const Home: React.FC = () => {
+export function Home() {
   return (
     <section className="home">
       <MassSchedule showAlways />
@@ -40,6 +40,8 @@ export const Home: React.FC = () => {
     </section>
   );
 };
+
+//Archiwalny kod javascript, który dynamicznie aktualizował informację o najbliższej Mszy Świętej. Obecnie jest to realizowane w komponencie React MassSchedule.tsx
 
 // setTimeout(() => {
 //     showNextMass();

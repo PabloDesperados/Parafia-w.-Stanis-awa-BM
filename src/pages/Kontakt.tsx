@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Kontakt: React.FC = () => {
+export function Kontakt() {
   return (
     <section className="kontakt">
       <h1>Kontakt</h1>

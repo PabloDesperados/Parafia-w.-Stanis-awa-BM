@@ -3,7 +3,7 @@ import PdfViewer from "../components/PdfViewer";
 import ogloszeniaPdf from "../pdf/ogloszenia.pdf";
 import ustawaPdf from "../pdf/ustawa.pdf";
 
-export const Ogloszenia: React.FC = () => {
+export function Ogloszenia() {
   return (
     <section className="ogloszenia">
       <h2>Ogłoszenia parafialne</h2>

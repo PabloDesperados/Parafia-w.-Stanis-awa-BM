@@ -1,6 +1,6 @@
 import React from "react";
 
-export const OParafii: React.FC = () => {
+export function OParafii() {
   return (
     <section className="o-parafii">
       <h2>O parafii</h2>

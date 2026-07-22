@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Msze: React.FC = () => {
+export function Msze() {
   return (
     <section className="msze">
       <h2>Msze Święte</h2>
