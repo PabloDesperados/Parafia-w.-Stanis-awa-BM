@@ -1,6 +1,8 @@
 import React from "react";
 import { MassSchedule } from "../components/MassBanner";
 import { Link } from "react-router-dom";
+import PdfViewer from "../components/PdfViewer";
+import wieczor_uwielbienia from "../pdf/wieczor_uwielbienia.pdf";
 
 export function Home() {
   return (
@@ -15,6 +17,8 @@ export function Home() {
           alt="Wnętrze kościoła parafialnego"
         />
       </div> */}
+
+      <PdfViewer fileUrl={wieczor_uwielbienia} />
 
       <article className="home-intro">
         <p>
