@@ -450,3 +450,102 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.kancelaria {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.kancelaria h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #1c1917;
+}
+
+/* Boks godzin otwarcia wzorowany na banerze mszy */
+.kancelaria-hours {
+  background-color: #f5f2ee;
+  border: 1px solid #d0cfc9;
+  border-left: 4px solid #6a3f23;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kancelaria-hours h3 {
+  color: #4a2d1a;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.kancelaria-hours-highlight {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin: 0.5rem 0;
+}
+
+.kancelaria-hours hr {
+  border: none;
+  border-top: 1px dashed #d0cfc9;
+  margin: 1rem 0;
+}
+
+/* Sekcja spraw i dokumentów */
+.kancelaria-info h3 {
+  font-size: 1.4rem;
+  color: #1c1917;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #d0cfc9;
+  padding-bottom: 0.4rem;
+}
+
+.kancelaria-item {
+  margin-bottom: 1.8rem;
+}
+
+.kancelaria-item h4 {
+  font-size: 1.15rem;
+  color: #1c1917;
+  margin-bottom: 0.3rem;
+}
+
+.kancelaria-item p {
+  margin-bottom: 0.5rem;
+}
+
+/* Komunikat o materiałach w przygotowaniu w parafialnej tonacji */
+.kancelaria-wip {
+  padding: 10px 14px;
+  background-color: #fcfbf9;
+  border-left: 4px solid #2e5b2e;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.kancelaria-back {
+  margin-top: 2rem;
+}
+
+/* Boks odsyłacza do Kancelarii w zakładce Kontakt */
+.kancelaria-lead {
+  margin: 25px 0;
+  padding: 18px 20px;
+  background-color: #f5f2ee;
+  border: 1px solid #d0cfc9;
+  border-left: 4px solid #6a3f23;
+  border-radius: 8px;
+}
+
+.kancelaria-lead h3 {
+  color: #4a2d1a;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.kancelaria-lead p {
+  margin-bottom: 12px;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Kontakt() {
   return (
@@ -23,6 +24,13 @@ export function Kontakt() {
         <br />
         +48 665 025 565
       </p>
+
+      <div className="kancelaria-lead">
+        <h3>Kancelaria</h3>
+        <Link to="/kancelaria" className="read-more-link">
+          Przejdź do kancelarii
+        </Link>
+      </div>
 
       <div className="map-container">
         <iframe

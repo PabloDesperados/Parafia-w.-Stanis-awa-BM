@@ -7,6 +7,7 @@ import { OParafii } from "./pages/OParafii";
 import { Ogloszenia } from "./pages/Ogloszenia";
 import { ZZyciaParafii } from "./pages/ZZyciaParafii";
 import { AlbumSzczegoly } from "./pages/AlbumSzczegoly";
+import { Kancelaria } from "./pages/Kancelaria";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/ogloszenia" element={<Ogloszenia />} />
           <Route path="/z-zycia-parafii" element={<ZZyciaParafii />} />
           <Route path="/z-zycia-parafii/:albumId" element={<AlbumSzczegoly />} />
+          <Route path="/kancelaria" element={<Kancelaria />} />
         </Routes>
       </Layout>
     </Router>
