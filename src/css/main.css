@@ -549,3 +549,54 @@ header {
 .kancelaria-lead p {
   margin-bottom: 12px;
 }
+
+.synod {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.synod h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #1c1917;
+}
+
+.synod-intro {
+  margin-bottom: 2rem;
+}
+
+.synod-dokument h3 {
+  font-size: 1.4rem;
+  color: #1c1917;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #d0cfc9;
+  padding-bottom: 0.4rem;
+}
+
+.synod-dokument p {
+  margin-bottom: 1rem;
+}
+
+.synod-invite {
+  background-color: #f5f2ee;
+  border-left: 4px solid #2e5b2e;
+  padding: 1.2rem 1.4rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  border-top: 1px solid #d0cfc9;
+  border-right: 1px solid #d0cfc9;
+  border-bottom: 1px solid #d0cfc9;
+}
+
+.synod-invite h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1c1917;
+  font-size: 1.25rem;
+}
+
+.synod-invite p {
+  margin: 0;
+  line-height: 1.6;
+}
