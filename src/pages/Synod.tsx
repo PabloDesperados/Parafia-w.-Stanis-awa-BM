@@ -1,6 +1,7 @@
 import React from "react";
 import PdfViewer from "../components/PdfViewer";
 import poslaniePdf from "../pdf/poslanie-synod.pdf";
+import { SynodMeeting } from "../components/SynodMeeting";
 
 export function Synod(){
     return (
@@ -16,6 +17,7 @@ export function Synod(){
                     Informacje dotyczące synodu oraz spotkań Zespołu Synodalnego będą podawane na bieżąco na stronie parafialnej.
                 </p>
             </div>
+            <SynodMeeting />
 
             <div className="synod-invite">
                 <h3>Włącz się w dzieło Synodu</h3>
