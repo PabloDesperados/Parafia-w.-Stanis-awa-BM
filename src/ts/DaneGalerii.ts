@@ -10,7 +10,7 @@ export const LISTA_ALBUMOW: TypAlbumu[] = [
   {
     id: "boze-cialo",
     tytul: "Uroczystość Bożego Ciała",
-    liczbaZdjec: 0, // zmień na Twoją faktyczną liczbę zdjęć
+    liczbaZdjec: 23, // zmień na Twoją faktyczną liczbę zdjęć
     dataKonkretna: "4 czerwca 2026 r.",
     pelnyOpis: "W tym roku Uroczystość Najświętszego Ciała i Krwi Chrystusa zgromadziła rzesze wiernych naszej parafii. Po uroczystej Mszy Świętej wyruszyła Procesja Eucharystyczna do czterech ołtarzy, które zostały pięknie przygotowane przez mieszkańców parafii. Serdeczne Bóg zapłać za zaangażowanie, wspólnotową modlitwę oraz świadectwo wiary."
   },
