@@ -14,6 +14,13 @@ export const LISTA_ALBUMOW: TypAlbumu[] = [
     dataKonkretna: "15 sierpnia 2026 r.",
     pelnyOpis: "Tradycyjne dziękczynienie za tegoroczne plony rozpoczęliśmy uroczystą procesją spod remizy OSP w Chruszczobrodzie do świątyni. Wspaniałe wieńce dożynkowe przygotowały KGW „Dolomitki” (Chruszczobród), KGW „Rafałki” (Chruszczobród-Piaski) oraz Sołectwo Trzebyczka. Po dziękczynnej Mszy Świętej mieszkańcy i goście wzięli udział w zorganizowanym festynie dożynkowym."
   },
+  {
+    id: "pielgrzymka-na-jasna-gore-2026",
+    tytul: "Pielgrzymka Bielsko-Żywiecka na Jasną Górę",
+    liczbaZdjec: 8, // zmień na Twoją faktyczną liczbę zdjęć
+    dataKonkretna: "6-7 sierpnia 2026 r.",
+    pelnyOpis: "W dniach 6 i 7 sierpnia nasza parafia miała radość gościć pątników Pieszej Pielgrzymki Diecezji Bielsko-Żywieckiej zmierzających na Jasną Górę. Po wieczornym przyjęciu pielgrzymów na nocleg i wspólnym odpoczynku, 7 sierpnia o godz. 8:30 sprawowana była Msza Święta, po której pątnicy z modlitwą i śpiewem wyruszyli w dalszą drogę do Częstochowy."
+  },
   // {
   //   id: "wieczor-uwielbienia-lipiec-2026",
   //   tytul: "Wieczór Uwielbienia - lipiec 2026",
